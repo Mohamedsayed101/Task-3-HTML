@@ -1,3 +1,177 @@
-figure {
-    display: inline-block;
+/* ===== Simple Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Global Settings ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 20px;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  border-color: white;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+/* ===== Section Styling ===== */
+section {
+  background-color: white;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* ===== Images ===== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 6px;
+}
+
+/* ===== Tables ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+/* ===== Media: Video, Audio, iframe ===== */
+video, audio, iframe {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+/* ===== Forms ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea, select, button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #1a1a1a;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #444;
+}
+  
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 15px;
+  font-size: 0.9em;
+  color: #666;
+}
+footer a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+
+/* ✅ Responsive Layout */
+
+/* small smart phone(less than 600px) */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  header, section, footer {
+    padding: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  video, audio, iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+
+  table {
+    border: none;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+}
+/* medium devices(Tablet: From 601px to 992px) */
+@media (min-width: 601px) and (max-width: 992px) {
+  nav ul {
+    justify-content: space-around;
+  }
+
+  section {
+    padding: 25px;
+  }
 }
