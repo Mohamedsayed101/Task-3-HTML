@@ -1,0 +1,241 @@
+<!-- made by Mohamed Sayed Omar El-sayed -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mohamed Sayed Omar El-sayed" />
+    <meta
+      name="description"
+      content="Fitness Trainer Website with full HTML practice including ARIA, Meta, Media, Tables."
+    />
+    <meta
+      name="keywords"
+      content="HTML, Fitness, Trainer, Mohamed Sayed, Accessibility, Meta, Table, Audio, Video, iframe"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#1a1a1a" />
+    <meta name="language" content="en" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="copyright" content="Mohamed Sayed Omar El-sayed" />
+    <meta name="accessibility" content="true" />
+
+    <!-- Social Media Preview (Open Graph – Facebook, LinkedIn) -->
+
+    <meta property="og:title" content="Trainer Mohamed | Fitness Website" />
+    <meta
+      property="og:description"
+      content="Train with Mohamed – certified fitness trainer to help you reach your goals."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.com/" />
+    <meta
+      property="og:image"
+      content="https://yourdomain.com/images/preview.jpg"
+    />
+
+    <!-- Twitter Card Preview -->
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Trainer Mohamed | Fitness Website" />
+    <meta
+      name="twitter:description"
+      content="Your fitness journey starts here."
+    />
+    <meta
+      name="twitter:image"
+      content="https://yourdomain.com/images/preview.jpg"
+    />
+
+    <link rel="icon" href="./Images/icons8-gym-64.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>Trainer Mohamed | Home</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Trainer Mohamed's Fitness Website</h1>
+      <nav aria-label="Main Navigation" role="navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About the Trainer</h2>
+        <figure>
+          <img
+            src="./Images/صورتى.jpg"
+            alt="Trainer Mohamed profile photo"
+            width="300"
+            height="400"
+          />
+          <figcaption>Mohamed - Certified Fitness Coach</figcaption>
+        </figure>
+        <p tabindex="0">
+          I’m Mohamed, a certified fitness trainer with a passion for helping
+          others achieve their goals.
+        </p>
+      </section>
+
+      <section id="programs" aria-labelledby="programs-heading">
+        <h2 id="programs-heading">Training Programs</h2>
+        <ul>
+          <li>Weight Loss</li>
+          <li>Muscle Gain</li>
+          <li>Cardio Endurance</li>
+          <li>Flexibility</li>
+        </ul>
+      </section>
+
+      <section id="schedule" aria-label="Training Schedule">
+        <h2>Weekly Training Schedule</h2>
+        <table border="1" aria-describedby="schedule-description">
+          <caption id="schedule-description">
+            Timetable for available group sessions
+          </caption>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Morning Session</th>
+              <th>Evening Session</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>Yoga</td>
+              <td>HIIT</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>Strength</td>
+              <td>Cardio</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td colspan="2">Outdoor Bootcamp</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="media" aria-label="Fitness Media">
+        <h2>Watch & Listen</h2>
+        <h3>Workout Video</h3>
+        <video
+          width="320"
+          height="240"
+          controls
+          poster="./Images/poster.png"
+          aria-label="Workout video"
+          lang="en"
+          title="Workout Video"
+        >
+          <source
+            src="./Images/3125907-uhd_3840_2160_25fps.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+
+        <h3>Motivational Audio</h3>
+        <audio controls>
+          <source src="./Images/sport-fitness-164589.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+
+        <h3>Wikipedia Article: Fitness</h3>
+        <iframe
+          src="https://en.wikipedia.org/wiki/Physical_fitness"
+          width="100%"
+          height="400"
+          title="Wikipedia article about Physical Fitness"
+          frameborder="0"
+          aria-label="Embedded Wikipedia article about fitness"
+        ></iframe>
+      </section>
+
+      <section id="testimonials" aria-labelledby="testimonials-heading">
+        <h2 id="testimonials-heading">Client Testimonials</h2>
+        <article aria-label="Testimonial from Ahmed">
+          <h3>Ahmed A.</h3>
+          <p><q>Mohamed helped me achieve my goals in just 3 months!</q></p>
+        </article>
+        <article aria-label="Testimonial from Salma">
+          <h3>Salma E.</h3>
+          <p>"His programs are amazing. Highly recommend!"</p>
+        </article>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact Me</h2>
+        <form aria-label="Contact Form">
+          <fieldset>
+            <legend>Send a Message</legend>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter Your name"
+              required
+            /><br /><br />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email"
+              required
+            /><br /><br />
+
+            <label for="message">Message:</label><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              cols="30"
+              placeholder="Your message"
+            ></textarea
+            ><br />
+            <br />
+
+            <button type="submit" role="button">Send</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section aria-label="Newsletter Signup">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form>
+          <label for="subscribe-email">Email:</label>
+          <input
+            type="email"
+            id="subscribe-email"
+            name="newsletter"
+            placeholder="Your email"
+          />
+          <button type="submit" aria-label="Subscribe to newsletter">
+            Subscribe
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer role="contentinfo" aria-label="Footer">
+      <p>
+        &copy; <time datetime="2025">2025</time> Mohamed Sayed. All rights
+        reserved.
+      </p>
+    </footer>
+  </body>
+</html>
