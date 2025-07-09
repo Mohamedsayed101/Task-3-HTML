@@ -45,7 +45,7 @@ Includes:
 
 ## 📸 Preview
 
-![Website Screenshot](./images/Simple_Fitness_website_photo.png)
+![Website Screenshot](./Images/Simple_Fitness_website_photo.png)
 
 
 ---
